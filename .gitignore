@@ -35,3 +35,4 @@ lerna-debug.log*
 
 # Sencivity data
 /src/config/keys.dev.ts
+/src/config/keys.ts
