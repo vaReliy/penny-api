@@ -2,8 +2,8 @@ import { Injectable, UnauthorizedException } from '@nestjs/common'
 import { PassportStrategy } from '@nestjs/passport'
 
 import { Strategy } from 'passport-local'
-import { UserDto } from '../../domain/user.model'
-import { AuthService } from './auth.service'
+import { UserDto } from '../../../domain/user.model'
+import { AuthService } from '../auth.service'
 
 @Injectable()
 export class LocalStrategy extends PassportStrategy(Strategy) {
