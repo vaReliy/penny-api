@@ -27,7 +27,7 @@ export class AuthService {
       sub: user.id,
     }
     return {
-      access_token: this.jwtService.sign(payload),
+      access_token: `Bearer ${this.jwtService.sign(payload)}`,
     }
   }
 }
