@@ -10,7 +10,7 @@ export class BillService {
   }
 
   getBill(): Bill {
-    return this._bill
+    return { ...this._bill }
   }
 
   updateBill(bill: Bill) {

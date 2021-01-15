@@ -8,7 +8,6 @@ export class AppController {
   @UseGuards(JwtAuthGuard)
   @Get('profile')
   async getProfile(@Request() req): Promise<UserDto> {
-    console.log('<-- GET [profile] |', req.user)
     return req.user
   }
 }

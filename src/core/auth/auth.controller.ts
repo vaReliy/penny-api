@@ -10,7 +10,6 @@ export class AuthController {
 
   @Post('login')
   async login(@Request() req): Promise<AccessToken> {
-    console.log('<-- POST [auth/login] |', req.user)
     return this.authService.login(req.user)
   }
 }
